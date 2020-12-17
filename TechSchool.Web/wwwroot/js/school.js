@@ -66,7 +66,7 @@
 
             axios.post('/api/SchoolApi/CreateStudent', self.student)
             .then(function(res){
-                let apiResult = res.apiResult;
+                let apiResult = res.data;
 
                 if(apiResult.success){
                     self.toastSuccess("Student created successfully", "Success");
